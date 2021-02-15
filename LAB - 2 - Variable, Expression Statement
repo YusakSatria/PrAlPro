@@ -1,0 +1,16 @@
+print('==========PROGRAM PENGHITUNG PENGELUARAN UANG BELANJA VALENTINE========')
+#Uang Ari
+uang = int(input('Masukkan Uang = '))
+#Belanja
+coklat = int(input('Harga Coklat = '))
+bunga = int(input('Harga Bunga = '))
+bensin = int(input('Uang Bensin = '))
+makan = int(input('Harga makanan = '))
+minum = int(input('Harga minuman = '))
+cemilan = int(input('Harga cemilan = '))
+#Total pengeluaran selama Valentine
+total = coklat + bunga + bensin + makan + minum + cemilan
+print('Total Pengeluaran = ',total)
+#Sisa uang Ari
+sisa = uang - total
+print('Sisa Uang Anda = ',sisa)
