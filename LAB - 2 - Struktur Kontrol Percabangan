@@ -1,0 +1,33 @@
+#Input Biodata
+nama = input('Masukkan Nama : ')
+tahun = int(input('Masukkan Tahun Lahir : '))
+jenjang = input('Masukkan Jenjang Sekolah : ')
+
+#Percabangan
+umur = 2021 - tahun
+if jenjang == 'SD':
+    print('============== HAPPY BIRTHDAY ==============')
+    print('Selamat hari ulang tahun yang ke-',umur)
+    print('Semoga tetap mendapat kesehatan, keselematan, dan kebahagiaan.')
+    print('Semoga di tahun ini',nama,'selalu mendapat nilai yang baik.')
+    print('Jangan main terus, ayokk belajar!!')
+elif jenjang == 'SMP':
+    print('============== HAPPY BIRTHDAY ==============')
+    print('Selamat hari ulang tahun yang ke-',umur)
+    print('Semoga tetap mendapat kesehatan, keselamatan, dan kebahagiaan.')
+    print('Semoga di tahun ini',nama,'mendapat nilai UN yang bagus agar dapat diterima di SMA Favorit.')
+    print('Ikuti banyak tryout agar lebih mudah dalam mengerjakan soal UN kedepannya.')
+elif jenjang == 'SMA':
+    print('============== HAPPY BIRTHDAY ==============')
+    print('Selamat hari ulang tahun yang ke-',umur)
+    print('Semoga tetap mendapat kesehatan, keselamatan, dan kebahagiaan.')
+    print('Semoga di tahun ini',nama,'dapat diterima di PTN yang diinginkan.')
+    print('Tetap belajar, nanti kalo engga lolos nyesel lohh!!')
+elif jenjang == 'Kuliah':
+    print('============== HAPPY BIRTHDAY ==============')
+    print('Selamat hari ulang tahun yang ke-',umur)
+    print('Semoga tetap mendapat kesehatan, keselamatan, dan kebahagiaan.')
+    print('Semoga di tahun ini',nama,'mendapat IP yang bagus.')
+    print('Mentang-mentang kuliah online, jangan ditinggal kuliahnya.')
+else:
+    print('Input Salah, Masukkan SD/SMP/SMA/Kuliah')
