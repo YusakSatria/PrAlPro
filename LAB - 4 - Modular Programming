@@ -1,0 +1,14 @@
+#rumus
+def luas_layang(diagonal1,diagonal2):
+    luas = (diagonal1*diagonal2)*0.5
+    return luas
+
+print('=========== PROGRAM PENGHITUNG LUAS LAYANG-LAYANG ==========')
+#input
+diagonal1=int(input('Masukan diagonal ke-1 = '))
+diagonal2=int(input('Masukan diagonal ke-2 = '))
+luas = luas_layang(diagonal1,diagonal2)
+
+#output
+print('Luas dari layang-layang yang akan anda hasilkan dari diagonal',diagonal1,'cm x',diagonal2,'cm adalah',luas,'cm2')
+print('=========== TERIMA KASIH KARENA TELAH MENGGUNAKAN PROGRAM INI ==========')
