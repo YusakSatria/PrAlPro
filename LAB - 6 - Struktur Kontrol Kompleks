@@ -1,0 +1,26 @@
+nama = input('Masukkan Nama Anda : ')
+matkul = int(input('Jumlah mata pelajaran : '))
+total = []
+jml = 0
+
+for i in range(0,matkul):
+    nilai = int(input('Masukkan Nilai Pelajaran yang ke-%d : '%(i+1)))
+    total.append(nilai)
+    jml+=total[i]
+    rata = jml/matkul
+    if nilai >= 90:
+        print('PERTAHANKAN!!')
+    else:
+        print('TINGKATKAN!!')
+if rata >= 85:
+    print('Halo',nama,',dari',matkul,'pelajaran yang anda ikuti, Grade anda adalah A')
+elif rata >=70:
+    print('Halo',nama,',dari',matkul,'pelajaran yang anda ikuti, Grade anda adalah B')
+elif rata >=60:
+    print('Halo',nama,',dari',matkul,'pelajaran yang anda ikuti, Grade anda adalah C')
+elif rata >=50:
+    print('Halo',nama,',dari',matkul,'pelajaran yang anda ikuti, Grade anda adalah D')
+elif rata <50:
+    print('Halo',nama,',dari',matkul,'pelajaran yang anda ikuti, Grade anda adalah E')
+
+print('Rata-rata Anda adalah',rata)
