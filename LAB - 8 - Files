@@ -1,0 +1,17 @@
+handle = open('rapot.txt','r')
+for i in range(10):
+    mahasiswa = input('Masukkan Nama Mahasiswa : ')
+    for line in handle:
+        lst=[]
+        lst=line.split(',')
+        if mahasiswa in lst:
+            break
+        else:
+            continue
+    if lst[0]==mahasiswa:
+        print('Mahasiswa yang bernama',lst[0])
+        print('Dengan NIM',lst[1])
+        print('Adalah Mahasiswa',lst[2])
+    else:
+        print('Program yang dijalankan error.')
+handle.close()
