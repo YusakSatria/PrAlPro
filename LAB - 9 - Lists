@@ -1,0 +1,35 @@
+senin = [' ',' ','Algoritma Pemrograman','Pratikum Algoritma Pemrograman',' ']
+selasa = [' ','Matematika Diskrit','Arsitektur dan Organisasi Komputer','Statistik',' ']
+rabu = [' ','Pendidikan Kewarganegaraan','Jaringan Komputer','Pratikum Jaringan Komputer','Pratikum Algoritma Pemrograman']
+kamis = [' ',' ','ICE',' ',' ']
+jumat = [' ',' ',' ',' ',' ']
+
+hari = input('Halo Ryan, silahkan masukkan hari yang ingin dicari: ')
+if hari == 'senin':
+    for i in range(5):
+        if senin[i] == ' ':
+            pass
+        else:
+            print('Sesi ke-%d'%(i+1),senin[i])
+elif hari == 'selasa':
+    for i in range(5):
+        if selasa[i] == ' ':
+            pass
+        else:
+            print('Sesi ke-%d'%(i+1),selasa[i])
+elif hari== 'rabu':
+    for i in range(5):
+        if rabu[i] == ' ':
+            pass
+        else: 
+            print('Sesi ke-%d'%(i+1),rabu[i])
+elif hari == 'kamis':
+    for i in range(5):
+        if kamis[i]== ' ':
+            pass
+        else:
+            print('Sesi-%d'%(i+1,),kamis[i])
+elif hari == 'jumat':
+    print('Hari jumat Anda tidak ada perkuliahan.')
+else:
+    print('Input yang dimasukkan salah.')
