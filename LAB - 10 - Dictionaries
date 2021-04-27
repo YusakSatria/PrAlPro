@@ -1,0 +1,14 @@
+jumlah = int(input('Masukkan Jumlah Rider : '))
+test = []
+for i in range(jumlah):
+    waktu = int(input('Masukkan Perolehan Waktu (detik) : '))
+    test.append(waktu)
+
+def CepatTerbanyak(test):
+    j = dict((i,test.count(i)) for i in test)
+    m = max(j.values())
+    s = min([s for s in j if j.get(s) == m])
+
+    print(s,'berjumlah',m,'orang')
+
+CepatTerbanyak(test)
