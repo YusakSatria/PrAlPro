@@ -1,0 +1,11 @@
+tim = ('M.Marquez','P.Espargaro','M.Vinales','F.Quartararo','J.Miller','F.Bagnaia','A.Rins','J.Mir','D.Petrucci','V.Rossi','A.Espargaro','J.Zarco')
+
+def hitungrerata(tim):
+    semua = []
+    for i in tim:
+        waktu = float(input('Masukkan perolehan waktu dari %s :'%i))
+        semua.append(waktu)
+    jumlah = sum(semua)
+    print('Nilai rata-rata waktu dari semua pembalap saat ini adalah',jumlah/(len(semua)),'detik')
+
+hitungrerata(tim)
