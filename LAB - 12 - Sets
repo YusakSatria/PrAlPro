@@ -1,0 +1,15 @@
+jumlah = int(input('Masukkan jumlah billing yang aktif : '))
+a=[]
+for i in range(jumlah):
+    billing = input('Masukkan nama billing : ')
+    a.append(billing)
+semua_billing = set(a)
+def hasil(semua_billing):
+    count = 0
+    for nama in semua_billing:
+        semua_nama = set(nama)
+        if len(semua_nama)>=count:
+            huruf = nama
+            count = len(semua_nama)
+    print('Nama billing dengan huruf terbanyak adalah',huruf,'dengan jumlah huruf sebanyak',count)
+hasil(semua_billing)
