@@ -1,0 +1,17 @@
+import re
+
+def wisnu(kalimat):
+    ganti = re.sub('[l]','r',kalimat)
+    print(ganti.split(' '))
+
+kalimat1 = 'Wisnu melasa deplesi kalena kulang tampan'
+kalimat2 = 'Wisnu ingin belmain petak umpet belsama teman-temannya'
+kalimat3 = 'Teknik infolmatika melupakan julusan yang belat'
+kalimat4 = 'Adi kesusahan mengeljakan pl yang dibelikan Dosen'
+kata1= 'belenang'
+
+wisnu(kalimat1)
+wisnu(kalimat2)
+wisnu(kalimat3)
+wisnu(kalimat4)
+wisnu(kata1)
